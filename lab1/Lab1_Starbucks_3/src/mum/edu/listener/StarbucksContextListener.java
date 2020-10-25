@@ -24,9 +24,4 @@ public class StarbucksContextListener implements ServletContextListener{
  		  }
 
 		  public void contextDestroyed(ServletContextEvent event){}
-
- 
-
-
-
 }

@@ -8,15 +8,6 @@
     <servlet-name>AuthenticationServlet</servlet-name>
     <servlet-class>mum.edu.cs.AuthenticationServlet</servlet-class>
   </servlet>
-  <servlet>
-    <servlet-name>Example</servlet-name>
-    <servlet-class>mum.edu.cs.ServletExample</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>Example</servlet-name>
-    <url-pattern>/example</url-pattern>
-  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>AuthenticationServlet</servlet-name>
