@@ -28,20 +28,7 @@ public class AuthenticationServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PrintWriter writer = response.getWriter();
-		response.setContentType("text/html");
-		response.setHeader("Cache-Control", "no-cache");
-		writer.println("<!DOCTYPE html>");
-		writer.println("<head><meta charset=\"ISO-8859-1\"><title>Insert title here</title></head>");
-		writer.println("<body><h2>Ask for advise about your favorite roast</h2><form action=\"../action/advice\" method=\"get\">");
-		writer.println("<select name=\"roast\">");
-		writer.println("<option value=\"-\">--Choose Roast--</option>");
-		writer.println("<option value=\"dark\">Dark</option>");
-		writer.println("<option value=\"medium\">Medium</option>");
-		writer.println("<option value=\"light\">Light</option>");
-		writer.println("</select><br/><br/>");
-		writer.println("<input type=\"submit\" value=\"Submit\"/><br/><br/>");
-		writer.println("</form></body></html>");
+		request.getRequestDispatcher("/display.jsp").forward(request,response);
 	}
 
 	/**
@@ -61,7 +48,8 @@ public class AuthenticationServlet extends HttpServlet {
 				
 			response.sendRedirect("../index.jsp");
 		} else {
-			
+
+			request.setAttribute("login",true);
 			PrintWriter writer = response.getWriter();
 			response.setContentType("text/html");
 			response.setHeader("Cache-Control", "no-cache");
