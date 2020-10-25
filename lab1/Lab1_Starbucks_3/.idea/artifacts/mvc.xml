@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="mvc">
+    <output-path>$PROJECT_DIR$/classes/artifacts/mvc</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+        </element>
+        <element id="directory" name="classes">
+          <element id="module-output" name="Lab1_Starbucks_3" />
+        </element>
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/WebContent/index.html" />
+    </root>
+  </artifact>
+</component>
