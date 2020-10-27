@@ -4,13 +4,13 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="MVC2Demo" />
+          <element id="module-output" name="MVC2Calculator" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="application" name="J2EE 1.4-J2EE 1.4" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="MVC2Demo/web/Web" />
+      <element id="javaee-facet-resources" facet="MVC2Calculator/web/Web" />
     </root>
   </artifact>
 </component>
